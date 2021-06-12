@@ -1,0 +1,33 @@
+
+/* Class = "UIButton"; normalTitle = "Bet x2"; ObjectID = "6Aw-dq-JmH"; */
+"6Aw-dq-JmH.normalTitle" = "Bet x2";
+
+/* Class = "UIButton"; normalTitle = "Deal"; ObjectID = "6Oh-NN-N1Z"; */
+"6Oh-NN-N1Z.normalTitle" = "Deal";
+
+/* Class = "UIButton"; normalTitle = "Check"; ObjectID = "F7g-nV-Oot"; */
+"F7g-nV-Oot.normalTitle" = "Check";
+
+/* Class = "UIButton"; normalTitle = "Bet x1"; ObjectID = "Gwd-Ua-rpv"; */
+"Gwd-Ua-rpv.normalTitle" = "Bet x1";
+
+/* Class = "UIButton"; normalTitle = "Again"; ObjectID = "Ptr-lH-Bpb"; */
+"Ptr-lH-Bpb.normalTitle" = "Again";
+
+/* Class = "UILabel"; text = "Place yout bet!"; ObjectID = "c59-AI-dcs"; */
+"c59-AI-dcs.text" = "Place yout bet!";
+
+/* Class = "UILabel"; text = "Dealer:"; ObjectID = "gYO-wS-Jom"; */
+"gYO-wS-Jom.text" = "Dealer:";
+
+/* Class = "UILabel"; text = "Black Jack"; ObjectID = "kXO-By-sBh"; */
+"kXO-By-sBh.text" = "Black Jack";
+
+/* Class = "UILabel"; text = "You have $1000"; ObjectID = "n8E-X4-Wvv"; */
+"n8E-X4-Wvv.text" = "You have $1000";
+
+/* Class = "UILabel"; text = "$0"; ObjectID = "nFO-dW-I6Q"; */
+"nFO-dW-I6Q.text" = "$0";
+
+/* Class = "UILabel"; text = "Player:"; ObjectID = "nmZ-vi-Fv6"; */
+"nmZ-vi-Fv6.text" = "Player:";

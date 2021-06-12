@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tap_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time : 30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulS-nK-636">
+                                <rect key="frame" x="140.5" y="74" width="133" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="01K-8U-LKj"/>
+                                    <constraint firstAttribute="height" constant="46" id="mEF-yN-Zwh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52q-Nb-edJ">
+                                <rect key="frame" x="134" y="742" width="146" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="GKd-2D-Na1"/>
+                                    <constraint firstAttribute="width" constant="146" id="l9h-PB-Jba"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrQ-74-iVI">
+                                <rect key="frame" x="82" y="315.5" width="250" height="265"/>
+                                <state key="normal" backgroundImage="button_tap_deselected.png"/>
+                                <state key="highlighted" image="button_tap_selected.png"/>
+                                <connections>
+                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dok-Mu-ehp"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="checker_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="vf2-eR-ua3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="t2a-el-7Wm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="checker_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="frl-uf-6IY">
+                                <rect key="frame" x="0.0" y="874" width="414" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="nyY-lh-FiF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="vf2-eR-ua3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5w1-Zl-Xwr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vf2-eR-ua3" secondAttribute="trailing" id="7Ci-fW-z9P"/>
+                            <constraint firstItem="52q-Nb-edJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7yl-0p-3QB"/>
+                            <constraint firstAttribute="bottom" secondItem="52q-Nb-edJ" secondAttribute="bottom" constant="8" id="9tF-5N-c3t"/>
+                            <constraint firstItem="JrQ-74-iVI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cjh-Fu-7wa"/>
+                            <constraint firstItem="vf2-eR-ua3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HC1-97-QS5"/>
+                            <constraint firstItem="ulS-nK-636" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QHX-bk-Bbv"/>
+                            <constraint firstItem="52q-Nb-edJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sf2-n2-eKs"/>
+                            <constraint firstItem="JrQ-74-iVI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UUt-qq-EB0"/>
+                            <constraint firstAttribute="bottom" secondItem="frl-uf-6IY" secondAttribute="bottom" id="a3y-j9-HoL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="52q-Nb-edJ" secondAttribute="bottom" constant="18" id="nf1-qo-t6K"/>
+                            <constraint firstItem="ulS-nK-636" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="oda-T8-LTb"/>
+                            <constraint firstItem="ulS-nK-636" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0a-wC-qSI"/>
+                            <constraint firstAttribute="bottom" secondItem="52q-Nb-edJ" secondAttribute="bottom" constant="10" id="qQv-ll-mxN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="52q-Nb-edJ" id="zGo-qo-tMA"/>
+                        <outlet property="timerLabel" destination="ulS-nK-636" id="BD1-Hw-9xn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_tap_deselected.png" width="250" height="265"/>
+        <image name="button_tap_selected.png" width="250" height="265"/>
+        <image name="checker_top.png" width="320" height="22"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tap_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time : 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulS-nK-636">
+                                <rect key="frame" x="166" y="52" width="82.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52q-Nb-edJ">
+                                <rect key="frame" x="106.5" y="714" width="201" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="F2a-8b-QgC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrQ-74-iVI">
+                                <rect key="frame" x="123.5" y="391.5" width="167" height="113"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="CrK-eB-Wmg"/>
+                                    <constraint firstAttribute="width" constant="167" id="Q54-EA-Utx"/>
+                                </constraints>
+                                <state key="normal" title="Tap Me!"/>
+                                <connections>
+                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dok-Mu-ehp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="52q-Nb-edJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7yl-0p-3QB"/>
+                            <constraint firstAttribute="bottom" secondItem="52q-Nb-edJ" secondAttribute="bottom" constant="8" id="9tF-5N-c3t"/>
+                            <constraint firstItem="JrQ-74-iVI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cjh-Fu-7wa"/>
+                            <constraint firstItem="ulS-nK-636" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QHX-bk-Bbv"/>
+                            <constraint firstItem="52q-Nb-edJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sf2-n2-eKs"/>
+                            <constraint firstItem="JrQ-74-iVI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UUt-qq-EB0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="52q-Nb-edJ" secondAttribute="bottom" constant="18" id="nf1-qo-t6K"/>
+                            <constraint firstItem="ulS-nK-636" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="oda-T8-LTb"/>
+                            <constraint firstItem="ulS-nK-636" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0a-wC-qSI"/>
+                            <constraint firstAttribute="bottom" secondItem="52q-Nb-edJ" secondAttribute="bottom" constant="10" id="qQv-ll-mxN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="52q-Nb-edJ" id="zGo-qo-tMA"/>
+                        <outlet property="timerLabel" destination="ulS-nK-636" id="BD1-Hw-9xn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

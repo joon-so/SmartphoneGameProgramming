@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Player.addCard(c:):Player.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "arr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.checkWinner():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "LCardsDealer[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Player.value():Player.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "arr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.Deal(_:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "LCardsDealer">
+            </PersistentString>
+            <PersistentString
+               value = "dealer.cards">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
